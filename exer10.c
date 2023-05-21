@@ -16,3 +16,4 @@ setlocale(LC_ALL, "pt_br");
     
     return 0;
 }
+//revisado
