@@ -9,7 +9,7 @@ struct tm *LocalTime;
     //faça um programa que receba o ano de nascimento de uma pessoa e o ano atual, calcule e mostre a idade da pessoa em anos, meses e dias
     int ano, dia;
     char mes[20];
-    int mesInt = aoit(mes);
+    int mesInt = atoi(mes);
 
     // Obtém o tempo atual
     currentTime = time(NULL);
