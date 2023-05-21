@@ -19,7 +19,7 @@ setlocale(LC_ALL, "pt_BR");
     
     comprimento = 2 * M_PI * raio;
     area = M_PI * pow(raio, 2);
-    volume = 3 / 4 * M_PI * (pow(raio, 3));
+    volume = 0.75 * M_PI * pow(raio, 3);
 
     printf("O comprimento da esfera é: %.2f, sua área é: %.2f, e seu volume é: %.2f", comprimento, area, volume);
 

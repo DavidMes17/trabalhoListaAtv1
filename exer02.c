@@ -4,14 +4,14 @@
 int main(void){
 setlocale(LC_ALL, "pt_BR");
     //faça um programa que receba o peso de uma pessoa em quilos, calcule e mostre o peso em gramas
-    float peso;
+    float pesoKg, pesoG;
 
     printf("Digite seu peso em KG: ");
-        scanf("%f", &peso);
+        scanf("%f", &pesoKg);
     
-    peso = peso * 30;
+    pesoG = pesoKg * 30;
 
-    printf("seu peso em Gramas é de: %dg", peso);
+    printf("seu peso em Gramas é de: %.2fg", pesoG);
 
     return 0;
 }

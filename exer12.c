@@ -9,18 +9,23 @@ setlocale(LC_ALL, "pt_BR");
     char numeroString[4];
 
     do{
-    printf("Digite um número inteiro menor que 100: ");
+    printf("Digite um número inteiro menor que 1000: ");
         scanf("%d", &numero);
-}   while(numero <= 0 || numero >= 100);
+}   while(numero <= 0 || numero >= 1000);
 
     sprintf(numeroString, "%d", numero);
 
-    switch(strlen(numeroString)){
+    switch (strlen(numeroString)){
     case 1:
-        if((int)numeroString[1] > 1){
-            printf("%c unidades");
+
+        if(numero > 1){
+
+            printf("%d unidades", numero);
+
         } else{
-            printf("%c unidade");
+
+            printf("%d unidade", numero);
+
         }
         break;
     
